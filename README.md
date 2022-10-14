@@ -5,4 +5,4 @@ Just open NifKiller.exe and let it do it's job. Once it's done it'll return the 
 ### ScreenShots : 
 ![Before](https://i.imgur.com/nUcHxo3.png)
 ![During](https://i.imgur.com/TCdNabO.png)
-![After](blob:https://imgur.com/a5531d0b-dda3-4ca0-9a33-fde906a971e6)
+![After](https://i.imgur.com/GkO8rkI.png)
