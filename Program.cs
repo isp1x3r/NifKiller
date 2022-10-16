@@ -59,7 +59,7 @@ namespace NifKiller
                 // Now that we have the nif handle ids we just call handle.exe with proper arguments and just close them
                 foreach (string handleid in _HandleIds)
                 {
-                    Util.runCommand(handlepath, "-c 0x" + handleid + " -y -p " + bsProcID);
+                    Util.runCommand(handlepath, "-c 0x" + handleid + " -y -pid " + bsProcID);
                 }
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Successfully Killed All Nif Handles!");
