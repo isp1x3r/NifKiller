@@ -41,8 +41,11 @@ namespace NifKiller
                     Console.WriteLine(line);
                     if (line.Contains(".nif"))
                     {
-                        char[] Id = new char[3];
-                        line.CopyTo(2, Id, 0, 3);
+                        char[] Id = new char[4];
+                        line.CopyTo(2, Id, 0, 4);
+                        // Check for actual length : this is because some handles either have 3 or 4 characters/digits
+                        if (Id[Id.Length - 1] == ':')
+                            _HandleIds.Add(new string(Id).SkipLast(1).ToString());
                         _HandleIds.Add(new string(Id));
                     }
                 }
