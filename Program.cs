@@ -45,8 +45,15 @@ namespace NifKiller
                         line.CopyTo(2, Id, 0, 4);
                         // Check for actual length : this is because some handles either have 3 or 4 characters/digits
                         if (Id[Id.Length - 1] == ':')
+                        {
                             _HandleIds.Add(new string(Id).SkipLast(1).ToString());
-                        _HandleIds.Add(new string(Id));
+
+                        }
+                        else
+                        {
+                            _HandleIds.Add(new string(Id));
+
+                        }
                     }
                 }
                 if(_HandleIds.Count == 0)
